@@ -1,0 +1,29 @@
+Using Map
+
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        Map<Integer,Boolean> mp=new TreeMap<Integer,Boolean>();
+        int n1=0,n2=0;
+        for(int i=0;i<m;i++)
+         mp.put(nums1[i],true);
+        for(int i=0;i<n;i++)
+         mp.put(nums2[i],true);
+        for(Map.Entry<Integer,Boolean> me : mp.entrySet())
+        {
+            System.out.print(" "+me.getKey());
+         if(n1<m)
+         {
+           nums1[n1]=me.getKey();
+             n1++;
+         }
+      else if(n2<n)
+        {
+  
+            nums2[n2]=me.getKey();
+            n2++;
+        }
+    }
+            
+        
+    }
+}
