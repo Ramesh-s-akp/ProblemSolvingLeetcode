@@ -1,9 +1,9 @@
 Intro 
 Recursion
-    Recursion is a a function call itself untill it a specified condition is met.
+    Recursion is a a function call itself untill the  specified condition is met.
 
     four things we need to remember in recursion
-     * call inself
+     * call itself
      * Base Condition
      * Stack Overflow/stack Space
      *Recursion Tree
